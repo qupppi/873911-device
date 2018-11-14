@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Aleksey Filatov](https://up.htmlacademy.ru/htmlcss/23/user/873911).
-* Наставник: [Nikilay Dymchev](https://htmlacademy.ru/profile/nikopol_fw).
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 _Не удаляйте и не обращайте внимание на файлы:_<br>
