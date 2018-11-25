@@ -6,22 +6,21 @@
 </head>
 <body>
 <header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img-logo.svg" width="175" height="45" alt="Логотип магазина Device">
-    </a>
-    <ul class="user-navigation">
-      <li>
-        <a href="index.html">Поиск по сайту</a></li>
-      <li>
-        <a href="site-navigation.html">Найти</a></li>
-      <li>
-        <a href="link.html">Войти</a></li>
-      <li>
-        <a href="compare.html">Сравнить</a></li>
-      <li>
-        <a href="basket.html">Корзина</a></li>
-    </ul>
+  <a class="main-header-logo">
+    <img src="logo-main" width="175" height="45" alt="Логотип магазина Device">
+  </a>
+  <a href="#">Поиск по сайту</a>
+  <!-- Здесь будет форма -->
+
+  <ul class="user-navigation">
+    <li>
+      <a href="#">Войти</a></li>
+    <li>
+      <a href="#">Сравнить</a></li>
+    <li>
+      <a href="#">Корзина</a></li>
+  </ul>
+  <nav class="header-navigation">
     <ul class="site-navigation">
       <li>
         <a href="catalog.html">Каталог товаров</a></li>
@@ -34,7 +33,8 @@
     </ul>
   </nav>
 </header>
-<main class="container">
+
+<main>
   <h1 class="page-title">Моноподы для селфи</h1>
   <ul class="breadcrumbs">
     <li>
@@ -44,22 +44,20 @@
     <li>
       <a class="breadcrumbs-current">Моноподы для селфи</a></li>
   </ul>
-  <section class="filters">
+
     <h2 class="filters">Фильтр:</h2>
-    <!-- Здесь будет форма -->
-  </section>
-  <section class="sorting">
+  <!-- Здесь будет форма -->
     <h2 class="Sotring">Сортировка:</h2>
     <!-- Здесь будет форма -->
-  </section>
-  <section class="catalog">
+
+
     <h2 class="visually-hidden">Список товаров</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
         <h3>
           <a href="catalog-item.html">
-            <span class="catalog-category">Селфи-палки</span>
-            <span class="catalog-item-title">Любительская селфи-палка</span>
+            <span class="catalog-category">Селфи-палки</span>↩
+            <span class="catalog-item-title">Любительская селфи-палка</span>↩
           </a>
         </h3>
         <p class="catalog-item-image">
@@ -71,7 +69,7 @@
           <a class="button" href="#">В корзину</a></p>
       </li>
       <li class="catalog-item">
-        <h3>
+        <h3>↩
           <a href="catalog-item.html">
             <span class="catalog-category">Селфи-палки</span>
             <span class="catalog-item-title">Профессиональная селфи-палка</span>
@@ -115,7 +113,7 @@
         <p class="catalog-item-image">
           <a href="catalog-item.html">
             <img src="img/product-4.jpg" width="360" height="380"
-                 alt="Селфи палка «Следуй за мной»">
+                 alt="Селфи палка «Следуй за мной»">↩
           </a>
         </p>
         <p class="catalog-item-price">
@@ -131,63 +129,45 @@
       <li class="pagination-item"><a href="#">3</a>
       </li>
     </ul>
-    <ul class="forward-page">
-      <li>
-        <a class="button-back-page" href="#">Назад</a>
-      </li>
-      <li>
-        <a class="button-forward-page" href="#">Вперед</a>
-      </li>
-    </ul>
-  </section>
+    <a class="button-back-page" href="#">Назад</a>
+    <a class="button-forward-page" href="#">Вперед</a>
 </main>
-<footer class="footer-main">
-  <img src="img-logo/footer.svg" width="175" height="45" alt="Логотип магазина Device">
-  <section class="Device-section-address">
-    <a> Device </a>
-    <p> г.Москва , Улица строителей , 15 </p>
-  </section>
-  <section class="footer-delivey-warranty-contact">
-    <div class="footer-deliver-warranty-Contacts">
-      <ul>
-        <li>
-          <a href="#">Доставка</a></li>
-        <li>
-          <a href="#">Гарантия</a></li>
-        <li>
-          <a href="#">Контакты</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="footer-social">
-    <div class="footer-social">
-      <ul>
-        <li>
-          <a class="social-button" href="#">facebook.com</a></li>
-        <li>
-          <a class="social-button" href="#">twitter.com</a></li>
-        <li>
-          <a class="social-button" href="#">instagram.com</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="footer-user-navigation">
-    <div class="footer-user-navigation">
-      <ul>
-        <li>
-          <a class="footer-button-login" href="#">Войти</a></li>
-        <li>
-          <a class="footer-button-compare" href="#">Сравнить</a></li>
-        <li>
-          <a class="footer-button-basket" href="#">Корзина</a></li>
-      </ul>
-    </div>
-    <p>Тел.:+7(495)495-95-95</p>
+<footer class="footer">
+  <a href="/"></a>
+  <img src="logo-footer.png" width="175" height="45" alt="Логотип магазина Device">
+  <p class="footer__address">г.Москва , Улица строителей , 15 </p>
+  <p class="footer-social">
+    <a class="social-button" href="#">facebook.com</a>
+    <a class="social-button" href="#">twitter.com</a>
+    <a class="social-button" href="#">instagram.com</a>
+
+  </p>
+
+  <nav class="footer-navigation">
+    <ul class="site-navigation">
+      <li>
+        <a href="#">Каталог товаров</a></li>
+      <li>
+        <a href="#">Гарантия</a></li>
+      <li>
+        <a href="#">Доставка</a></li>
+      <li>
+        <a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <p class="footer_user">
+    <a class="footer-button-login" href="#">Войти</a>
+    <a class="footer-button-compare" href="#">Сравнить</a>
+    <a class="footer-button-basket" href="#">Корзина</a>
+  </p>
+
+  <a href="tel">Тел.:+7(495)495-95-95</a>
     <p class="footer-copyright">
       <b>Разработано:</b>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>
-  </section>
+
 </footer>
 </body>
 </html>
