@@ -11,7 +11,7 @@
   </a>
   <form class="search-form" action="search-site" method="post">
     <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
-    <input type="submit" name="submit" value="Найти">
+    <button type="submit" name="search_button" value="Найти"></button>
   </form>
   <ul class="user-navigation">
     <li>
@@ -145,13 +145,13 @@
     <h2 class="visually-hidden">Наши услуги</h2>
     <ul class="services">
       <li>
-        <a class="btn-delivery"  href="#">Доставка</a>
+        <button type="button"  class="button-delivery">Доставка</button>
       </li>
       <li>
-        <a class="btn-warranty"  href="#">Гарантия</a>
+        <button type="button"  class="button-warranty">Гарантия</button>
       </li>
       <li>
-        <a class="btn-credit"  href="#">Кредит</a>
+        <button type="button"  class="button-credit">Кредит</button>
       </li>
     </ul>
     <ul class="services-list">
@@ -175,22 +175,22 @@
     <ul class="brands-list">
       <li>
         <a class="brands_link__djj" href="#">
-          <img src="img/DJJ.jpg" height="300" width="780" alt="DJJ">
+          <img src="img/DJJ.jpg" height="100" width="260" alt="DJJ">
         </a>
       </li>
       <li>
         <a class="brands-link__spadgets" href="#">
-          <img src="img/SpAdgets.jpg" height="300" width="780" alt="SPADGETS">
+          <img src="img/SpAdgets.jpg" height="100" width="260" alt="SPADGETS">
         </a>
       </li>
       <li>
         <a class="brands-link__GoPRO" href="#">
-          <img src="img/GoPro.jpg" height="300" width="780" alt="GoPRO">
+          <img src="img/GoPro.jpg" height="100" width="260" alt="GoPRO">
         </a>
       </li>
       <li>
         <a class="brands-link__vive" href="#">
-          <img src="img/VIVE.jpg" height="300" width="780" alt="VIVE">
+          <img src="img/VIVE.jpg" height="100" width="260" alt="VIVE">
         </a>
       </li>
     </ul>
@@ -201,9 +201,15 @@
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
     <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленые точки России! Device работает со&nbsp;многими транспортными компаниями</p>
     <ul class="transport-company">
-      <li><b>Деловые линии</b></li>
-      <li><b>Автотрейдинг</b></li>
-      <li><b>ЖелДорЭкспедиция</b></li>
+      <li>
+        <a href="#">Деловые линии</a>
+      </li>
+      <li>
+        <a href="#">Автотрейдинг</a>
+      </li>
+      <li>
+        <a href="#">ЖелДорЭкспедиция</a>
+      </li>
     </ul>
     <a class="btn-about__us" href="#">Подробнее о нас</a>
   </section>
@@ -223,13 +229,13 @@
     </a>
     <ul class="footer_user">
       <li>
-        <a class="footer-button-login" href="#">Войти</a>
+        <a class="footer-button__login" href="#">Войти</a>
       </li>
       <li>
-        <a class="footer-button-compare" href="#">Сравнить</a>
+        <a class="footer-button__compare" href="#">Сравнить</a>
       </li>
       <li>
-        <a class="footer-button-cart" href="#">Корзина</a>
+        <a class="footer-button__cart" href="#">Корзина</a>
       </li>
     </ul>
   </div>
