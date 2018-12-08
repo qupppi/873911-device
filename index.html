@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css"  rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header-logo">
+  <a class="main-header-logo" href="/">
     <img src="img/logo-header.svg" height="36" width="163" alt="Логотип магазина Device">
   </a>
   <form class="search-form" action="search-site" method="post">
     <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
-    <button type="submit" name="search_button" value="Найти"></button>
+    <button type="submit" class="search-button">Найти</button>
   </form>
   <ul class="user-navigation">
     <li>
@@ -145,13 +148,13 @@
     <h2 class="visually-hidden">Наши услуги</h2>
     <ul class="services">
       <li>
-        <button type="button"  class="button-delivery">Доставка</button>
+        <a class="btn-delivery"  href="#">Доставка</a>
       </li>
       <li>
-        <button type="button"  class="button-warranty">Гарантия</button>
+        <a class="btn-warranty"  href="#">Гарантия</a>
       </li>
       <li>
-        <button type="button"  class="button-credit">Кредит</button>
+        <a class="btn-credit"  href="#">Кредит</a>
       </li>
     </ul>
     <ul class="services-list">
@@ -202,13 +205,13 @@
     <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленые точки России! Device работает со&nbsp;многими транспортными компаниями</p>
     <ul class="transport-company">
       <li>
-        <a href="#">Деловые линии</a>
+        <p>Деловые линии</p>
       </li>
       <li>
-        <a href="#">Автотрейдинг</a>
+        <p>Автотрейдинг</p>
       </li>
       <li>
-        <a href="#">ЖелДорЭкспедиция</a>
+        <p>ЖелДорЭкспедиция</p>
       </li>
     </ul>
     <a class="btn-about__us" href="#">Подробнее о нас</a>
@@ -224,7 +227,7 @@
 
 <footer>
   <div class="footer-top">
-    <a>
+    <a href="/">
       <img src="img/logo-footer.svg" height="36"  width="164" alt="Логотип магазина Device">
     </a>
     <ul class="footer_user">

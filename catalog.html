@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css"  rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
-  <a class="main-header-logo">
+  <a class="main-header-logo" href="/">
     <img src="img/logo-header.svg" height="36" width="163" alt="Логотип магазина Device">
   </a>
   <form class="search-form" action="search-site" method="post">
@@ -77,39 +80,14 @@
   </ul>
 
   <section>
-    <h2 class="sotring-list">Сортировка:</h2>
-    <ul class="sorting">
-      <li class="price">
-        <a class="btn-price"  href="#">По цене</a>
-      </li>
-      <li class="type">
-        <a class="btn-type"  href="#">По типу</a>
-      </li>
-      <li class="popular">
-        <a class="btn-popular"  href="#">По популярности</a>
-      </li>
-    </ul>
-    <ul class="increasing-deacreasing">
-      <li class="to-increase">
-        <a class="btn-increasing" href="#">По увеличению</a>
-      </li>
-      <li class="by-decreasing">
-        <a class="btn-decreasing"  href="#">По убыванию</a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>По цене:</legend>
-        <button class="filter__round-buttons filter__round-buttons--from" type="button">
-          <span>От 0</span>
-        </button>
-        <button class="filter__round-buttons filter__round-buttons--to" type="button">
-          <span>До 5000</span>
-        </button>
+        <label for="name">0</label>
+        <input  type="text" id="name" name="filter_round-buttons-from">
+        <label for="name">5000</label>
+        <input  type="text" id="name" name="filter_round-buttons-to">
       </fieldset>
       <fieldset>
         <legend>По цвету:</legend>
@@ -154,7 +132,28 @@
     </form>
   </section>
 
-
+  <section>
+    <h2 class="sorting-list">Сортировка:</h2>
+    <ul class="sorting">
+      <li class="price">
+        <a class="btn-price"  href="#">По цене</a>
+      </li>
+      <li class="type">
+        <a class="btn-type"  href="#">По типу</a>
+      </li>
+      <li class="popular">
+        <a class="btn-popular"  href="#">По популярности</a>
+      </li>
+    </ul>
+    <ul class="increasing-decreasing">
+      <li class="to-increase">
+        <a class="btn-increasing" href="#">По увеличению</a>
+      </li>
+      <li class="by-decreasing">
+        <a class="btn-decreasing"  href="#">По убыванию</a>
+      </li>
+    </ul>
+  </section>
 
   <section class="list-product">
     <h2 class="visually-hidden">Список товаров</h2>
