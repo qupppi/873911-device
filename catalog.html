@@ -14,7 +14,7 @@
   </a>
   <form class="search-form" action="search-site" method="post">
     <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
-    <button type="submit" name="search_button" value="Найти"></button>
+    <button type="submit" class="search-button">Найти</button>
   </form>
   <ul class="user-navigation">
     <li>
@@ -83,14 +83,14 @@
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>По цене:</legend>
-        <label for="name">0</label>
-        <input  type="text" id="name" name="filter_round-buttons-from">
-        <label for="name">5000</label>
-        <input  type="text" id="name" name="filter_round-buttons-to">
+        <legend>Стоимость</legend>
+        <label for="price-from">от</label>
+        <input  type="text" id="price-from" name="filter_round-buttons-from">
+        <label for="price-to">до</label>
+        <input  type="text" id="price-to" name="filter_round-buttons-to">
       </fieldset>
       <fieldset>
-        <legend>По цвету:</legend>
+        <legend>Цвет</legend>
         <ul>
           <li class="filter-color">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
