@@ -30,7 +30,7 @@
   <nav class="header-navigation">
     <ul class="navigation-list">
       <li>
-        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Каталог товаров</a>
         <ul class="catalog-list">
           <li>
             <a href="#">Вирутальная реальность</a>
@@ -80,13 +80,13 @@
   </ul>
 
   <section>
-    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <h2 class="filter-list">ФИЛЬТР:</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Стоимость</legend>
-        <label for="price-from">от</label>
+        <label class="visually-hidden__filter_round-buttons-from" for="price-from">от 0</label>
         <input  type="text" id="price-from" name="filter_round-buttons-from">
-        <label for="price-to">до</label>
+        <label class="visually-hidden__filter_round-buttons-to" for="price-to">до 5000</label>
         <input  type="text" id="price-to" name="filter_round-buttons-to">
       </fieldset>
       <fieldset>
@@ -128,12 +128,12 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="filter-button button">Показать</button>
+      <button type="submit" class="filter-button">Показать</button>
     </form>
   </section>
 
   <section>
-    <h2 class="sorting-list">Сортировка:</h2>
+    <h2 class="sorting-list">СОРТИРОВКА:</h2>
     <ul class="sorting">
       <li class="price">
         <a class="btn-price"  href="#">По цене</a>
@@ -235,9 +235,9 @@
   </section>
 </main>
 
-<footer>
+<footer class="main-footer">
   <div class="footer-top">
-    <a href="/">
+    <a href="#/">
       <img src="img/logo-footer.svg" height="36"  width="163" alt="Логотип магазина Device">
     </a>
     <ul class="footer_user">
@@ -266,7 +266,7 @@
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <p>Тел.:<a href="tel">+7(495)495-95-95</a></p>
+    <p class="telephone_link">Тел.:<a href="tel">+7(495)495-95-95</a></p>
   </div>
 
   <div class="footer-bottom">
