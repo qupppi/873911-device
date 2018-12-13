@@ -83,14 +83,14 @@
     <h2 class="filter-list">ФИЛЬТР:</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>Стоимость</legend>
-        <label class="visually-hidden__filter_round-buttons-from" for="price-from">от 0</label>
+        <legend class="filter-difference">Стоимость</legend>
+        <label class="filter_round-buttons-from" for="price-from">от 0</label>
         <input  type="text" id="price-from" name="filter_round-buttons-from">
-        <label class="visually-hidden__filter_round-buttons-to" for="price-to">до 5000</label>
+        <label class="filter_round-buttons-to" for="price-to">до 5000</label>
         <input  type="text" id="price-to" name="filter_round-buttons-to">
       </fieldset>
       <fieldset>
-        <legend>Цвет</legend>
+        <legend class="filter-difference">Цвет</legend>
         <ul>
           <li class="filter-color">
             <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
@@ -116,7 +116,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Bluetooth</legend>
+        <legend class="filter-difference">Bluetooth</legend>
         <ul>
           <li class="filter-option">
             <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth-availability" value="yes" id="filter-yes" checked>
@@ -160,12 +160,12 @@
     <ul class="catalog-list">
       <li class="catalog-item-1">
         <a href="catalog-item-1.html">
-          <h3>Любительская селфи-палка</h3>
+          <h3 class="item-1">Любительская селфи-палка</h3>
         </a>
         <p class="catalog-item-image">
           <img src="img/itemC1.jpg" height="380" width="360" alt="Любительская селфи-палка">
         </p>
-        <b>500 руб.</b>
+        <b class="catalog-price">500 руб.</b>
         <div>
           <a href="#">В корзину</a>
           <a href="#">Сравнить</a>
@@ -174,12 +174,12 @@
 
       <li class="catalog-item-2">
         <a href="catalog-item-2.html">
-          <h3>Профессиональная селфи-палка</h3>
+          <h3 class="item-2">Профессиональная селфи-палка</h3>
         </a>
         <p class="catalog-item-image">
           <img src="img/itemC2.jpg" height="380" width="360" alt="Профессиональная селфи-палка">
         </p>
-        <b>1500 руб.</b>
+        <b class="catalog-price">1500 руб.</b>
         <div>
           <a href="#">В корзину</a>
           <a href="#">Сравнить</a>
@@ -188,12 +188,12 @@
 
       <li class="catalog-item-3">
         <a href="catalog-item-3.html">
-          <h3>Непотопляемая селфи-палка</h3>
+          <h3 lcass="item-3">Непотопляемая селфи-палка</h3>
         </a>
         <p class="catalog-item-image">
           <img src="img/itemC3.jpg" height="380" width="360" alt="Непотопляемая селфи-палка">
         </p>
-        <b>2500 руб.</b>
+        <b class="catalog-price">2500 руб.</b>
         <div>
           <a href="#">В корзину</a>
           <a href="#">Сравнить</a>
@@ -202,12 +202,12 @@
 
       <li class="catalog-item-4">
         <a href="catalog-item-4.html">
-          <h3>Селфи палка «Следуй за мной»</h3>
+          <h3 class="item-4">Селфи палка «Следуй за мной»</h3>
         </a>
         <p class="catalog-item-image">
           <img src="img/itemC4.jpg" height="380" width="360" alt="Селфи палка «Следуй за мной">
         </p>
-        <b>4900 руб.</b>
+        <b class="catalog-price">4900 руб.</b>
         <div>
           <a href="#">В корзину</a>
           <a href="#">Сравнить</a>
@@ -237,8 +237,8 @@
 
 <footer class="main-footer">
   <div class="footer-top">
-    <a href="#/">
-      <img src="img/logo-footer.svg" height="36"  width="163" alt="Логотип магазина Device">
+    <a href="/">
+      <img src="img/logo-footer.svg" height="35" width="163" alt="Логотип магазина Device">
     </a>
     <ul class="footer_user">
       <li>
@@ -266,7 +266,7 @@
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <p class="telephone_link">Тел.:<a href="tel">+7(495)495-95-95</a></p>
+    <p class="phone_link">Тел.:<a href="tel">+7(495)495-95-95</a></p>
   </div>
 
   <div class="footer-bottom">

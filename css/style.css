@@ -10,13 +10,32 @@
   url("../css/fonts/gilroy/gilroylight.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+  url('../fonts/opensans.woff2') format('woff2'),
+  url('../fonts/opensans.woff') format('woff'),
+  url('../fonts/opensans.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/opensanslight.woff2') format('woff2'),
+  url('../fonts/opensanslight.woff') format('woff'),
+  url('../fonts/opensanslight.ttf') format('ttf');
+}
 
 body {
   font-family: 'OpenSans-Light' , Arial,  sans-serif;
   font-size: 15px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 24px;
   color:  #464646;
 }
@@ -105,10 +124,10 @@ a {
   color:  #000000;
 }
 
-legend {
+.filter-difference {
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
-  line-height: 24;
+  line-height: 24px;
   letter-spacing: 0.18px;
   color: #000;
 }
@@ -166,7 +185,10 @@ legend {
   color:  rgba(0, 0, 0, 0.3);
 }
 
-h3 {
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
   font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -174,7 +196,7 @@ h3 {
   color: #000;
 }
 
-b {
+.catalog-price {
   font-family: 'Gilroy-ExtraLight', Arial,  sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -206,8 +228,6 @@ b {
 .about-us_Link {
   font-family: 'Gilroy-ExtraBold', Arial , sans-serif;
   font-size: 47px;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.02;
   letter-spacing: 1px;
   color: #000000;
@@ -279,7 +299,7 @@ b {
 
 .footer-social a,
 .footer-copyright a,
-.telephone_link a,
+.phone_link a,
 .site-navigation a {
   color:  #ffffff;
   line-height: 30px;
@@ -288,7 +308,7 @@ b {
 .footer_user,
 .footer-social,
 .footer-copyright,
-.telephone_link,
+.phone_link,
 .site-navigation {
   list-style: none;
 }
@@ -312,7 +332,7 @@ b {
   text-align: right;
 }
 
-.telephone_link {
+.phone_link {
   text-align: right;
 }
 
