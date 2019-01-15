@@ -456,7 +456,7 @@ input[type="search"]:focus ~ label {
   height: 12px;
   background-image: url(../img/slider-button-empty.svg);
   background-size: 12px 12px;
-  transition: transform 0,7 s;
+  transition: transform;
 }
 
 .slide-buttons label:first-child {
