@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
-  <link href="fonts/normalize.css" rel="stylesheet">
-  <link href="css/style.css"  rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/min.style.css"  rel="stylesheet">
 </head>
 <body class="page-not-logged">
 <header class="main-header container">
   <div class="main-header-background main-header-background-index"></div>
   <nav class="main-navigation">
-    <a class="header-logo index-logo">Device</a>
+    <a class="header-logo index-logo" href="index.html">Device</a>
     <form class="search" action="https://echo.htmlacademy.ru" method="get">
       <input id="search-site" type="search" name="search" placeholder="Поиск по сайту">
       <label for="search-site">
@@ -65,14 +65,11 @@
     </ul>
   </nav>
 </header>
-
 <main>
   <section class="main-sliders container">
-
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
-
     <h2 class="visually-hidden">Селфи-палка</h2>
     <article class="slide">
       <div class="img-container">
@@ -80,7 +77,8 @@
       </div>
       <div class="slide-description">
         <h3 class="title">Делай селфи,<br>
-          как Бен Стиллер!</h3>
+          как Бен Стиллер!
+        </h3>
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5&nbsp;килограмм.</p>
         <a class="button" href="#">Подробнее</a>
         <table class="about-tech">
@@ -97,7 +95,6 @@
         </table>
       </div>
     </article>
-
     <h2 class="visually-hidden">Фитнес-браслет</h2>
     <article class="slide">
       <div class="img-container">
@@ -105,7 +102,8 @@
       </div>
       <div class="slide-description">
         <h3 class="title">Худеем<br>
-          правильно!</h3>
+          правильно!
+        </h3>
         <p>Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать диету.</p>
         <a class="button" href="#">Подробнее</a>
         <table class="about-tech">
@@ -118,15 +116,13 @@
         </table>
       </div>
     </article>
-
     <h2 class="visually-hidden">Квадракоптер</h2>
     <article class="slide">
       <div class="img-container">
         <img src="img/slider3.png" width="526" height="334" alt="Технологичный квадрокоптер с лазером">
       </div>
       <div class="slide-description">
-        <h3 class="title">Порхает как бабочка,<br>
-          жалит как пчела!</h3>
+        <h3 class="title">Порхает как бабочка, жалит как пчела!</h3>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a class="button" href="#">Подробнее</a>
         <table class="about-tech">
@@ -141,48 +137,44 @@
         </table>
       </div>
     </article>
-
     <div class="slide-buttons">
       <label for="btn-1" tabindex="0"></label>
       <label for="btn-2" tabindex="0"></label>
       <label for="btn-3" tabindex="0"></label>
     </div>
-
   </section>
-
   <ul class="catalog-list container" title="Разделы каталога товаров">
     <li class="catalog-item virtual-reality">
-      <a href="#">
-        <h3>Виртуальная реальность</h3>
+      <a href="catalog.html">
+        <p class="ct">Виртуальная реальность</p>
       </a>
     </li>
     <li class="catalog-item selfi-stick">
       <a href="catalog.html">
-        <h3>Моноподы для селфи</h3>
+        <p class="ct">Моноподы для селфи</p>
       </a>
     </li>
     <li class="catalog-item camera">
-      <a href="#">
-        <h3>Экшн-камеры</h3>
+      <a href="catalog.html">
+        <p class="ct">Экшн-камеры</p>
       </a>
     </li>
     <li class="catalog-item fitclock">
-      <a href="#">
-        <h3>Фитнес-браслеты</h3>
+      <a href="catalog.html">
+        <p class="ct">Фитнес-браслеты</p>
       </a>
     </li>
     <li class="catalog-item iclock">
-      <a href="#">
-        <h3>Умные часы</h3>
+      <a href="catalog.html">
+        <p class="ct">Умные часы</p>
       </a>
     </li>
     <li class="catalog-item quadrocopter">
-      <a href="#">
-        <h3>Квадрокоптеры</h3>
+      <a href="catalog.html">
+        <p class="ct">Квадрокоптеры</p>
       </a>
     </li>
   </ul>
-
   <section class="service-slides">
     <h2 class="visually-hidden">Сервисы</h2>
     <div class="container">
@@ -210,8 +202,7 @@
       </div>
     </div>
   </section>
-
-<h2 class="visually-hidden">Наши бренды</h2>
+  <h2 class="visually-hidden">Наши бренды</h2>
   <ul class="brands container">
     <li class="brand-link_djj">
       <a href="#">
@@ -234,12 +225,11 @@
       </a>
     </li>
   </ul>
-
   <div class="description-company container">
     <section class="about-us">
       <h2 class="title">О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас</p>
-      <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдаленые точки России! Device работает со&nbsp;многими транспортными компаниями</p>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
       <ul class="company-list">
         <li>Деловые Линии</li>
         <li>Автотрейдинг</li>
@@ -259,16 +249,15 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
-      <a class="button write-us-button" href="#">Напишите нам</a>
+      <a class="button write-us-button" href="#writeus.html">Напишите нам</a>
     </section>
   </div>
 </main>
-
 <footer class="main-footer">
   <div class=" container">
     <div class="main-footer-content">
       <div class="footer-top">
-        <a class="footer-logo index-logo">Device</a>
+        <a class="footer-logo index-logo" href="index.html">Device</a>
         <ul class="footer-user-navigation">
           <li class="footer-user-navigation-item user-enter-footer user-enter-index">
             <a href="#">Войти</a>
@@ -311,13 +300,12 @@
             </a>
           </li>
         </ul>
-        <a class="html-logo" href="https://htmlacademy.ru">
+        <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         </a>
       </div>
     </div>
   </div>
 </footer>
-
 <section class="write-us">
   <h2 class="visually-hidden">Окно отправки письма</h2>
   <button class="close-button close-button-popup" type="button">
@@ -339,7 +327,6 @@
     <button class="button send-button" type="submit">Отправить</button>
   </form>
 </section>
-
-<script src="script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
