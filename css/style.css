@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans" , Arial , sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -37,7 +37,7 @@ body {
 }
 a {
   text-decoration: none;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -54,14 +54,14 @@ a:active:not(.button) {
 .title {
   margin: 0;
   padding: 0;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
   color: #000000;
   letter-spacing: 0.47px;
 }
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   margin: -1px;
   border: 0;
@@ -77,7 +77,7 @@ a:active:not(.button) {
   height: 24px;
   text-align: center;
   vertical-align: middle;
-  font-family: "Gilroy" , Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -104,37 +104,29 @@ a:active:not(.button) {
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
-
 /* [ ---HEADER----] */
-
-
 
 .main-header {
   padding-top: 40px;
-}
-.main-header-background {
-  width: 1160px;
-  height: 186px;
-  background-color: #f7e296;
-  position: absolute;
-}
-.main-header-background-index {
-  height: 300px;
-  background-color: #f7e296;
 }
 .main-navigation {
   min-height: 150px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 60px;
+  padding: 33px 60px 0;
   justify-content: space-between;
   align-content: flex-start;
-  padding-top: 33px;
   background-color: #f7e296;
 }
-.header-logo , .footer-logo {
+.index-header {
+  position: relative;
+  padding-top: 34px;
+  background-color: #f7e296;
+  min-height: 266px;
+  margin-bottom: -117px;
+}
+.header-logo, .footer-logo {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.48px;
@@ -149,7 +141,7 @@ a:active:not(.button) {
   left: 58px;
   color: #000000;
 }
-.main-navigation .index-logo:hover{
+.main-navigation .index-logo:hover {
   color: rgba(0, 0, 0, 0.5)
 }
 .main-navigation .index-logo:active {
@@ -161,7 +153,7 @@ a:active:not(.button) {
   width: 440px;
   height: 50px;
 }
-.search label{
+.search label {
   display: inline-block;
   vertical-align: middle;
   width: 38px;
@@ -169,32 +161,44 @@ a:active:not(.button) {
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: 5px 18px;
-  order: -2;
 }
 .search input {
   width: 320px;
   border-width: 0;
   background-color: transparent;
-  opacity: 0.3;
+  order: 2;
 }
 .search-button {
   display: none;
   width: 85px;
   height: 50px;
   border: 2px solid #000000;
-  margin-left:auto;
+  margin-left: auto;
   background-color: transparent;
+  order: 3;
 }
-input[type="search"]:focus ~ button {
+input[type="search"]:focus~button {
   display: block;
 }
 .search input:focus {
   border-bottom: 2px solid #000000;
   outline: 0;
 }
-input[type="search"]:focus ~ label {
+input[type="search"]:focus~label {
   height: 48px;
   border-bottom: 2px solid #000000;
+}
+input[type="search"]::placeholder {
+  color: rgba(0, 0, 0, 0.2)
+}
+input[type="search"]:hover::placeholder {
+  color: rgba(0, 0, 0, 0.4)
+}
+input[type="search"]::-ms-clear {
+  display: none;
+}
+input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration {
+  display: none;
 }
 .search button:hover {
   background-color: #000000;
@@ -202,7 +206,7 @@ input[type="search"]:focus ~ label {
 }
 .search button:active {
   display: block;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .user-navigation, .site-navigation, .catalog-navigation {
   padding: 0;
@@ -216,14 +220,14 @@ input[type="search"]:focus ~ label {
   justify-content: space-between;
   align-items: center;
 }
-.user-navigation a{
+.user-navigation a {
   position: relative;
 }
 .user-navigation-item {
   padding-left: 21px;
 }
 .user-navigation-item a, .catalog-navigation a {
-  font-family: "Open Sans", Arial , sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -367,12 +371,7 @@ input[type="search"]:focus ~ label {
 .main-sliders input {
   display: none;
 }
-
-
-
 /*-----SLIDERS-----*/
-
-
 
 .slide {
   display: none;
@@ -421,11 +420,11 @@ input[type="search"]:focus ~ label {
 .slide-buttons label:nth-child(2) {
   margin-right: 17px;
 }
-#btn-1:checked ~ .slide-buttons label:first-child, #btn-2:checked ~ .slide-buttons label:nth-child(2), #btn-3:checked ~ .slide-buttons label:last-child {
+#btn-1:checked~.slide-buttons label:first-child, #btn-2:checked~.slide-buttons label:nth-child(2), #btn-3:checked~.slide-buttons label:last-child {
   background-image: url(../img/slider-button.svg);
   background-size: 12px 12px;
 }
-#btn-1:checked ~ .slide:first-of-type, #btn-2:checked ~ .slide:nth-of-type(2), #btn-3:checked ~ .slide:last-of-type {
+#btn-1:checked~.slide:first-of-type, #btn-2:checked~.slide:nth-of-type(2), #btn-3:checked~.slide:last-of-type {
   display: flex;
 }
 .slide-description {
@@ -451,7 +450,7 @@ input[type="search"]:focus ~ label {
   z-index: -1;
   top: -7px;
   right: 5px;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
@@ -466,7 +465,7 @@ input[type="search"]:focus ~ label {
   z-index: -1;
   top: -7px;
   right: 5px;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
@@ -481,7 +480,7 @@ input[type="search"]:focus ~ label {
   z-index: -1;
   top: -7px;
   right: 5px;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 179px;
@@ -510,7 +509,7 @@ input[type="search"]:focus ~ label {
   width: 160px;
 }
 .about-tech .table-row:first-child {
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   color: #000000;
@@ -528,12 +527,7 @@ input[type="search"]:focus ~ label {
 .table-row:first-child td {
   padding-bottom: 6px;
 }
-
-
-
 /* [------CATALOG------] */
-
-
 
 .catalog-list {
   display: flex;
@@ -639,25 +633,20 @@ input[type="search"]:focus ~ label {
   background-image: url("../img/item6.svg");
   background-size: 135px 69px;
 }
-
-
-
 /* [-------SERVICE---------] */
-
-
 
 .service-content {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 60px;
+  padding-bottom: 72px;
 }
 .service-content input {
   display: none;
 }
 .service-slides {
-  background-image: -webkit-linear-gradient(transparent 100px, #e5e5e5 100px );
-  background-image: -o-linear-gradient(transparent 100px, #e5e5e5 100px );
-  background-image: linear-gradient(transparent 100px, #e5e5e5 100px );
+  background-image: -webkit-linear-gradient(transparent 100px, #e5e5e5 100px);
+  background-image: -o-linear-gradient(transparent 100px, #e5e5e5 100px);
+  background-image: linear-gradient(transparent 100px, #e5e5e5 100px);
   margin-top: 80px;
 }
 .service-content .button {
@@ -668,7 +657,7 @@ input[type="search"]:focus ~ label {
   width: 161px;
   cursor: pointer;
   margin-top: 26px;
-  color:#000000;
+  color: #000000;
   outline: inherit;
 }
 .service-content .button:first-child:active {
@@ -700,29 +689,29 @@ input[type="search"]:focus ~ label {
   display: flex;
   flex-direction: column;
 }
-#button-1:checked ~ .slide-service-buttons label:first-child, #button-2:checked ~ .slide-service-buttons label:nth-child(2), #button-3:checked ~ .slide-service-buttons label:nth-child(3) {
+#button-1:checked~.slide-service-buttons label:first-child, #button-2:checked~.slide-service-buttons label:nth-child(2), #button-3:checked~.slide-service-buttons label:nth-child(3) {
   text-align: left;
   height: 24px;
   color: #f7e184;
   background-color: #000000;
   outline: 0;
 }
-#button-1:checked ~ .slide-service-buttons label:first-child::before, #button-2:checked ~ .slide-service-buttons label:nth-child(2)::before, #button-3:checked ~ .slide-service-buttons label:nth-child(3):before {
+#button-1:checked~.slide-service-buttons label:first-child::before, #button-2:checked~.slide-service-buttons label:nth-child(2)::before, #button-3:checked~.slide-service-buttons label:nth-child(3):before {
   background-color: #000000;
 }
-#button-1:checked ~ .slide-service-buttons label:first-child {
+#button-1:checked~.slide-service-buttons label:first-child {
   width: 265px;
   padding-left: 18px;
 }
-#button-2:checked ~ .slide-service-buttons label:nth-child(2) {
+#button-2:checked~.slide-service-buttons label:nth-child(2) {
   width: 260px;
   padding-left: 23px;
 }
-#button-3:checked ~ .slide-service-buttons label:nth-child(3) {
+#button-3:checked~.slide-service-buttons label:nth-child(3) {
   width: 247px;
   padding-left: 36px;
 }
-#button-1:checked ~ .service-slide:first-of-type, #button-2:checked ~ .service-slide:nth-of-type(2), #button-3:checked ~ .service-slide:nth-of-type(3) {
+#button-1:checked~.service-slide:first-of-type, #button-2:checked~.service-slide:nth-of-type(2), #button-3:checked~.service-slide:nth-of-type(3) {
   display: flex;
 }
 .service-slide {
@@ -756,13 +745,9 @@ input[type="search"]:focus ~ label {
 }
 .service-slide p {
   width: 430px;
-  margin-top: 30px;
+  margin-top: 33px;
 }
-
-
 /* [------ BRANDS------] */
-
-
 
 .brands {
   display: flex;
@@ -862,7 +847,7 @@ input[type="search"]:focus ~ label {
 .about-us p:first-of-type {
   margin-bottom: 15px;
 }
-.company-list{
+.company-list {
   position: relative;
   margin: 0;
   padding: 0;
@@ -870,7 +855,7 @@ input[type="search"]:focus ~ label {
   list-style: none;
   margin-left: 36px;
   margin-top: 51px;
-  font-family: "Gilroy" , Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
@@ -916,11 +901,7 @@ input[type="search"]:focus ~ label {
   margin-bottom: 10px;
   cursor: pointer;
 }
-
-
 /* [----MAP----] */
-
-
 
 .map-container {
   display: none;
@@ -947,12 +928,7 @@ input[type="search"]:focus ~ label {
   height: 40px;
   cursor: pointer;
 }
-
-
-
 /* [-----FOOTER----] */
-
-
 
 .main-footer {
   background-color: #464646;
@@ -980,7 +956,7 @@ input[type="search"]:focus ~ label {
   color: #ffc600;
   margin-left: -2px;
 }
-.footer-top .index-logo:hover{
+.footer-top .index-logo:hover {
   color: rgba(255, 198, 0, 0.8);
 }
 .footer-top .index-logo:active {
@@ -999,7 +975,7 @@ input[type="search"]:focus ~ label {
 }
 .footer-user-navigation a {
   position: relative;
-  font-family: "Open Sans", Arial , sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -1079,7 +1055,7 @@ input[type="search"]:focus ~ label {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 24px;
+  margin-top: 6px;
 }
 .footer-site-navigation a:hover {
   color: rgba(255, 255, 255, 0.6);
@@ -1105,7 +1081,7 @@ input[type="search"]:focus ~ label {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-top: 55px;
+  margin-top: 49px;
 }
 .footer-bottom::before {
   content: "";
@@ -1184,11 +1160,7 @@ input[type="search"]:focus ~ label {
 .footer-bottom a:active {
   opacity: 0.3;
 }
-
-
-
 /* [------BREADCRUMBS------] */
-
 
 .title-catalog {
   margin-left: 60px;
@@ -1202,7 +1174,7 @@ input[type="search"]:focus ~ label {
   list-style: none;
   margin-left: 60px;
   margin-top: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 }
 .breadcrumbs-item:first-child {
   margin-right: 14px;
@@ -1212,16 +1184,16 @@ input[type="search"]:focus ~ label {
   margin-right: 14px;
   margin-top: -2px;
 }
-.breadcrumbs-item, .breadcrumbs-item a{
-  font-family: "Open Sans", Arial , sans-serif;
+.breadcrumbs-item, .breadcrumbs-item a {
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  text-transform: none ;
+  text-transform: none;
   line-height: 24px;
   letter-spacing: 0.14px;
   color: rgba(0, 0, 0, 0.3)
 }
-.breadcrumbs-item:first-child a, .breadcrumbs-item:nth-child(2) a{
+.breadcrumbs-item:first-child a, .breadcrumbs-item:nth-child(2) a {
   display: inline-block;
   vertical-align: middle;
   padding-right: 25px;
@@ -1252,21 +1224,14 @@ input[type="search"]:focus ~ label {
   background-image: -o-linear-gradient(#dbdbdb 70px, #ebebeb 70px);
   background-image: linear-gradient(#dbdbdb 70px, #ebebeb 70px);
 }
-
-
-
-
 /* [-----FILTER----] */
-
-
-
 
 .filter {
   display: flex;
   flex-direction: column;
   width: 328px;
   padding-left: 20px;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1308,7 +1273,7 @@ input[type="search"]:focus ~ label {
   border: 0;
   border-top: 2px solid #000000;
 }
-.filter-form p{
+.filter-form p {
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -1321,7 +1286,7 @@ input[type="search"]:focus ~ label {
   width: 200px;
   margin-top: 25px;
 }
-.product-price label{
+.product-price label {
   display: inline-block;
   vertical-align: middle;
   margin-top: 35px;
@@ -1333,7 +1298,7 @@ input[type="search"]:focus ~ label {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 23px;
@@ -1384,7 +1349,7 @@ input[type="search"]:focus ~ label {
 .filter-form input {
   display: none;
 }
-.product-color label::before{
+.product-color label::before {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
@@ -1404,7 +1369,7 @@ input[type="search"]:focus ~ label {
   top: -3px;
   left: -1px;
 }
-.bluetooth label::before{
+.bluetooth label::before {
   display: inline-block;
   vertical-align: middle;
   position: absolute;
@@ -1420,7 +1385,7 @@ input[type="search"]:focus ~ label {
 .bluetooth .bluetooth-no-label::before {
   top: -3px;
 }
-input[type="checkbox"]:checked ~ label::before {
+input[type="checkbox"]:checked~label::before {
   top: -2px;
   width: 27px;
   height: 23px;
@@ -1428,20 +1393,20 @@ input[type="checkbox"]:checked ~ label::before {
   background-repeat: no-repeat;
   background-size: 27px 23px;
 }
-input[type="checkbox"]:checked ~ .red-color-label::before, input[type="checkbox"]:checked ~ .pink-color-label::before {
+input[type="checkbox"]:checked~.red-color-label::before, input[type="checkbox"]:checked~.pink-color-label::before {
   top: -3px;
 }
-input[type="checkbox"]:checked:not(:disabled) ~ label:hover::before, input[type="checkbox"]:not(:checked):not(:disabled) ~ label:hover::before, input[type="radio"]:checked:not(:disabled) ~ label:hover::before, input[type="radio"]:not(:checked):not(:disabled) ~ label:hover::before {
+input[type="checkbox"]:checked:not(:disabled)~label:hover::before, input[type="checkbox"]:not(:checked):not(:disabled)~label:hover::before, input[type="radio"]:checked:not(:disabled)~label:hover::before, input[type="radio"]:not(:checked):not(:disabled)~label:hover::before {
   opacity: 0.6;
 }
-input[type="checkbox"]:disabled ~ label, input[type="radio"]:disabled ~ label {
+input[type="checkbox"]:disabled~label, input[type="radio"]:disabled~label {
   opacity: 0.3;
 }
-input[type="radio"]:checked ~ label::before {
+input[type="radio"]:checked~label::before {
   top: -4px;
   background-image: url(../img/radio-on.svg);
 }
-input[type="radio"]:checked ~ .bluetooth-no-label::before {
+input[type="radio"]:checked~.bluetooth-no-label::before {
   top: -3px;
 }
 .filter-form .button {
@@ -1472,7 +1437,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   align-items: flex-start;
 }
 .sorting p {
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   color: #000000;
@@ -1576,6 +1541,9 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   justify-content: space-between;
   align-content: flex-start;
 }
+.product-item img:hover {
+  cursor: pointer;
+}
 .product-item:not(:first-child):not(:nth-child(2)) {
   margin-top: 45px;
 }
@@ -1594,7 +1562,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   height: 56px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.7px;
@@ -1614,23 +1582,25 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   position: relative;
   margin-bottom: 23px;
 }
-.selection-menu button {
+.selection-menu a {
   position: absolute;
   visibility: hidden;
   outline: inherit;
 }
-.selection-menu button:first-of-type {
+.selection-menu a:first-of-type {
+  position: absolute;
   top: 45%;
   left: 8%;
 }
-.selection-menu button:last-of-type {
+.selection-menu a:last-of-type {
+  position: absolute;
   top: 60%;
   left: 28%;
 }
 .selection-menu:hover img {
   opacity: 0.7;
 }
-.selection-menu:hover button {
+.selection-menu:hover a {
   visibility: visible;
 }
 .compare-button {
@@ -1644,6 +1614,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   outline: inherit;
+  text-transform: none;
 }
 .compare-button:hover {
   color: #000000;
@@ -1655,7 +1626,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   display: flex;
   align-items: flex-start;
 }
-.product-item a {
+.product-item h4 {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1669,15 +1640,12 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
 .product-item p {
   margin: 0;
   padding: 0;
-  font-family: "Gilroy" , Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.16px;
 }
-
-
-
 .pagination-list {
   margin: 0;
   padding: 0;
@@ -1703,7 +1671,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
@@ -1744,13 +1712,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   background-color: #d9d9d9;
   color: rgba(0, 0, 0, 0.3);
 }
-
-
-
 /* [----------POPUP--------] */
-
-
-
 
 .write-us {
   width: 960px;
@@ -1758,8 +1720,11 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   position: fixed;
   display: none;
   flex-direction: column;
-  top: 20%;
-  left: 24%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   z-index: 1;
   background-color: #ffffff;
   box-shadow: 0px 10px 30px 0px rgba(150, 150, 150, 0.8);
@@ -1866,7 +1831,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   outline: 0;
 }
 .write-us-form .button {
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   width: 200px;
   height: 40px;
@@ -1887,7 +1852,7 @@ input[type="radio"]:checked ~ .bluetooth-no-label::before {
   margin-top: 35px;
 }
 .letter label {
-  font-family: "Gilroy", Arial , sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   color: #000000;

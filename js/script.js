@@ -19,7 +19,7 @@ var closePopUp = popUp.querySelector(".close-button-popup");
 var nameUser = popUp.querySelector("[name=name-user]");
 var email = popUp.querySelector("[name=email]");
 var contentLetter = popUp.querySelector("[name=content-letter]");
-var submit = popUp.querySelector(".send-button")
+var submit = popUp.querySelector(".send-button");
 
 openPopUp.addEventListener("click", function (evt) {
   evt.preventDefault();
